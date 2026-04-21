@@ -1,13 +1,14 @@
 ---
 name: llm-judge
 description: Evaluate whether a Molecule AI agent's output (a PR, a delegation result, a generated config) actually addresses the original request. Cheap LLM-as-judge gate that catches "wrong answer to right question" — the failure mode unit tests miss. Inspired by gstack's tier-3 LLM-as-judge test infra.
+origin: molecule-skill-llm-judge
 ---
 
 # llm-judge
 
 Unit tests verify the code RAN. They don't verify it did the RIGHT THING for the customer's actual request. This skill closes that gap.
 
-## When to invoke
+## When to Use
 
 After a Molecule AI agent (PM, Dev Lead, QA, etc.) produces a deliverable:
 - A PR they opened in response to an issue
